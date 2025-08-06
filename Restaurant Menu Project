@@ -1,0 +1,34 @@
+<!-- notes -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rice Ball Tavern</title>
+  </head>
+
+  <body> 
+    <header>
+      <img 
+      src="https://i.pinimg.com/736x/53/74/46/537446fdde3fdde832e768a30de0dbe3.jpg"
+      id="header-img">
+      
+      <nav>
+      <ul>
+      <li id="#menu">Menu</li>
+      <li id="#order-form">Order Here</li>
+      </ul>
+      </nav>
+
+    </header>
+
+<main>
+<section>
+<h2>Menu</h2>
+</section>
+<section>
+<h2>Place Your Order</h2>
+</section>
+
+</main>
+</body>
+</html>
