@@ -1,34 +1,135 @@
-<!-- notes -->
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rice Ball Tavern</title>
+    <title>Onigiri Tavern</title>
   </head>
 
   <body> 
     <header>
       <img 
-      src="https://i.pinimg.com/736x/53/74/46/537446fdde3fdde832e768a30de0dbe3.jpg"
-      id="header-img">
+        width="400"
+        src="https://i.pinimg.com/736x/dd/a8/60/dda8608129a429daf325929b5e8e7df2.jpg"
+        alt="japanese restaurant with chef in background"
+        id="header-img"
+      >
       
       <nav>
-      <ul>
-      <li id="#menu">Menu</li>
-      <li id="#order-form">Order Here</li>
-      </ul>
+        <ul>
+          <li> <a href="#menu">Menu</a></li>
+          <li> <a href="#order-form">Order Form</a></li>
+        </ul>
       </nav>
 
     </header>
 
-<main>
-<section>
-<h2>Menu</h2>
-</section>
-<section>
-<h2>Place Your Order</h2>
-</section>
+    <main>
+      <section id="menu">
+        <h2>Menu</h2>
 
-</main>
-</body>
+        <article>
+          <figure>
+            <img
+              width="230"
+              src="https://i.pinimg.com/736x/ce/c3/50/cec3508501535d3923e574f381a15bab.jpg"
+              alt="two plain onigiri"
+            > <br>
+          </figure>
+
+          <h3>Onigiri</h3>
+          <p>Steamed white rice with crunchy nori. 2 pieces <i><b>$5</b></i></p>
+        </article>
+
+
+        <article>
+          <figure>
+            <img
+              width="190"
+              src="https://i.pinimg.com/736x/98/21/a9/9821a97b544ff476a03948cff05064b5.jpg"
+              alt="onigiri topped with roe"
+            > <br>
+          </figure>
+
+          <h3>Ikura Onigiri</h3>
+          <p>Onigiri stuffed and topped with salmon roe and wrapped in fresh nori <i><b>$20</b></i></p>
+        </article>
+
+
+        <article>
+          <figure>
+            <img
+              width="200"
+              src="https://i.pinimg.com/1200x/0b/fa/56/0bfa569a757ea0bba10de6047e621802.jpg"
+              alt="white rice topped with eggs in a bowl"
+            > <br>
+          </figure>
+
+          <h3>Tamago Kake Gohan</h3>
+          <p>Japanese-style egg rice. Additional toppings available <i><b>$7</b></i></p>
+        </article>
+
+
+        <article>
+          <figure>
+            <img
+              width="240"
+              src="https://i.pinimg.com/736x/a1/08/d9/a108d9978546aedb4ca07a0af2bf952c.jpg"
+              alt="onigiri with black sesame seeds in package"
+            > <br>
+          </figure>
+
+          <h3>Black Sesame Onigiri</h3>
+          <p>Packaged onigiri topped with black sesame seeds and furikake <i><b>$6</i></b></p>
+        </article>
+      </section> <br>
+
+
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+
+        <form>
+          <label for="food-item1">Onigiri </label>
+          <input type="number" id="food-item1" name="Onigiri" min="0" value="0">
+          <br><br>
+
+          <label for="food-item2">Ikura Onigiri </label>
+          <input type="number" id="food-item2" name="Ikura Onigiri" min="0" value="0">
+          <br><br>
+
+          <!-- food item w 3 toppings options -->
+          <label for="food-item3">Tamago Kake Gohan </label>
+          <input type="number" id="food-item3" name="Tamago Kake Gohan" min="0" value="0">
+          <br>
+
+            <input type="checkbox" id="soy-sauce" name="toppings[]" value="soy-sauce">
+            <label for="soy-sauce">Soy Sauce</label>
+
+            <input type="checkbox" id="sesame-seeds" name="toppings[]" value="sesame-seeds">
+            <label for="sesame-seeds">Sesame Seeds</label>
+
+            <input type="checkbox" id="siracha" name="toppings[]" value="siracha">
+            <label for="siracha">Siracha</label>
+          <br><br>
+
+
+          <label for="food-item4">Black Sesame Onigiri</label>
+          <input type="number" id="food-item4" name="Black Sesame Onigiri" min="0" value="0">
+          <br><br>
+
+
+          <label for="special-requests">Special Requests</label>
+          <br>
+          <textarea id="special-requests" name="special-requests" maxlength="140"></textarea>
+          <br><br>
+
+          <input type="submit" value="Go To Checkout">
+        </form>
+
+      </section>
+      <br>
+    </main>
+
+    <footer>
+      <p>Made with love by SierraLynette</p>
+    </footer>
+  </body>
 </html>
